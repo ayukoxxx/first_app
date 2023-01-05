@@ -1,0 +1,8 @@
+<h1>hi!</h1>
+<%= link_to '投稿ページ', '/posts/new' %>
+<% @posts. each do |post|%>
+  <div class = "post">
+    <%= post.created_at%>
+    <%= post.memo %>
+  </div>
+<% end %>
